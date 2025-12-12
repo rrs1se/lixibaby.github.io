@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="script.js" />
+    <meta
+      name="description"
+      content="Меня зовут Елизавета, я стример и контент-креатор, создаю контент на TikTok и Twitch. Присоединяйтесь ко мне на платформе TikTok, смотрите стримы на Twitch и следите за обновлениями в Telegram."
+    />
+    <meta
+      name="keywords"
+      content="lixibaby, стример, TikTok, Twitch, игры, развлечения, контент, стримы, Telegram, Instagram, Discord"
+    />
+    <meta name="author" content="Елизавета" />
+    <meta
+      property="og:title"
+      content="lixibaby - Стример, TikTok, Twitch, Telegram, Discord, Игры и Развлечения"
+    />
+    <meta
+      property="og:description"
+      content="Присоединяйтесь ко мне на TikTok и Twitch! Я стример, создаю уникальный контент, играю в игры и делюсь своими приключениями."
+    />
+    <meta
+      property="og:image"
+      content="https://i.pinimg.com/236x/3f/b0/ec/3fb0ecc9391ed7d228740661f65ee374.jpg"
+    />
+    <meta property="og:url" content="https://www.lixibaby.com" />
+    <title>lixibaby - Информация</title>
+  </head>
+  <body>
+    <div class="left-side">
+      <div class="bg-left-center-images">
+        <div id="bg-left" class="bg-container">
+          <img
+            class="face front"
+            src="img/bg-left-side/bg-left-center-image-first.PNG"
+            alt="lixibaby front"
+          />
+          <img
+            class="face back"
+            src="img/bg-left-side/bg-left-center-image-second.jpg"
+            alt="lixibaby back"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="right-side">
+      <div class="bg-right-center-images">
+        <div id="bg-right" class="bg-container">
+          <img
+            class="face front"
+            src="img/bg-right-side/bg-right-center-image-first.PNG"
+            alt="lixibaby front"
+          />
+          <img
+            class="face back"
+            src="img/bg-right-side/bg-right-center-image-second.PNG"
+            alt="lixibaby back"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="audioControllers">
+      <audio id="player">
+        <source id="audioSource" src="bg_audio/LØST SIGNAL, Mayvee, PHURS - Rescue Me.mp3" type="audio/mpeg" />
+        Ваш браузер не поддерживает аудио.
+      </audio>
+      <button id="prevBtn" class="toggleBtn" data-label="Назад">
+        <i class="bi bi-skip-backward-fill"></i>
+      </button>
+      <button id="toggleBtn" class="toggleBtn" aria-pressed="false" data-label="Слушать">
+        <i class="bi bi-play-fill"></i>
+      </button>
+      <button id="nextBtn" class="toggleBtn" data-label="Вперёд">
+        <i class="bi bi-skip-forward-fill"></i>
+      </button>
+      <input
+        class="volumeController"
+        type="range"
+        id="volumeControl"
+        min="0"
+        max="0.05"
+        step="0.00000001"
+        value="50%"
+      />
+    </div>
+    <div id="trackInfo" class="track-info" aria-live="polite" hidden>
+      Сейчас играет: <span id="trackTitle"></span>
+    </div>
+    <content class="content">
+      <div>
+        <img
+          src="img/content-images/content-left-image.PNG"
+          alt="lixibaby"
+          class="content-left-upper-image"
+        />
+        <img
+          src="img/content-images/content-right-image.PNG"
+          alt="lixibaby"
+          class="content-right-upper-image"
+        />
+        <img
+          src="img/content-images/lixibaby.jpg"
+          alt="lixibaby"
+          class="main-image"
+        />
+      </div>
+      <h2 class="name">⚜️lixibaby⚜️</h2>
+      <h1 class="information">Немножко про меня</h1>
+      <p class="description">
+        Привет! Меня зовут Елизавета, мне ?#!? год, родилась в Украине, в городе
+        Киев, увлечена созданием уникального и современного контента на
+        платформе TikTok. Мой контент связан с играми и развлечениями, и я
+        стремлюсь приносить радость и улыбки своей аудитории. В дальнейшем я
+        планирую стримить на Twitch, чтобы еще больше взаимодействовать с моими
+        подписчиками и делиться своими игровыми приключениями в реальном
+        времени. Спасибо, что посетили мою страницу, и я надеюсь, что вам
+        понравится мой контент!❤️
+      </p>
+      <h2 class="pc">О компьютере:</h2>
+      <p class="details">
+        Видеокарта: NVIDIA GeForce RTX 4060 (8 GB)
+        <br />
+        Процессор: Intel Core i5-13400F (13-е поколение, 2.5 ГГц)
+        <br />
+        Оперативная память: 16 ГБ DDR4, 3200 МГц
+        <br />
+        SSD: 1 ТБ
+      </p>
+      <div class="socialLinks">
+        <a
+          data-bs-toggle="tooltip"
+          target="_blank"
+          href="https://t.me/lixibaby"
+          aria-label="Telegram"
+          data-label="Telegram"
+          data-bs-original-title="Telegram"
+          ><i class="bi bi-telegram"></i
+        ></a>
+        <a
+          data-bs-toggle="tooltip"
+          target="_blank"
+          href="https://www.instagram.com/liizoochka?igsh=Y25vdmU0M3ZzcXNm"
+          aria-label="Instagram"
+          data-label="Instagram"
+          data-bs-original-title="Instagram"
+          ><i class="bi bi-instagram"></i
+        ></a>
+        <a
+          data-bs-toggle="tooltip"
+          target="_blank"
+          href="https://discord.gg/bByqqkhccb"
+          aria-label="Discord"
+          data-label="Discord"
+          data-bs-original-title="Discord"
+          ><i class="bi bi-discord"></i
+        ></a>
+        <a
+          data-bs-toggle="tooltip"
+          target="_blank"
+          href="https://www.tiktok.com/@_._lixi_._"
+          aria-label="TikTok"
+          data-label="TikTok"
+          data-bs-original-title="TikTok"
+          ><i class="bi bi-tiktok"></i
+        ></a>
+        <a
+          data-bs-toggle="tooltip"
+          target="_blank"
+          href="https://www.twitch.tv/lixikli"
+          aria-label="Twitch"
+          data-label="Twitch"
+          data-bs-original-title="Twitch"
+          ><i class="bi bi-twitch"></i
+        ></a>
+        <a
+          data-bs-toggle="tooltip"
+          target="_blank"
+          href="https://donatello.to/lixikli"
+          aria-label="Донат"
+          data-label="Донат"
+          data-bs-original-title="Донат"
+          ><i class="bi bi-heart"></i
+        ></a>
+      </div>
+    </content>
+    <script src="script.js">
+      defer
+    </script>
+  </body>
+</html>
